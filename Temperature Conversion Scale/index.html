@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion Scale</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> Temperature Conversion Scale</h1>
+    <div id="container">
+        <label for="temperature" id="label">ENTER TEMPERATURE:</label>
+        <select title="from" id="from">
+            <option value="celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+        </select><br>
+        <input type="number" placeholder="Enter Number" id="temperature">
+        
+        <select title="to" id="to">
+            <option value="celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+        </select><br>
+        <button type="submit" onclick="calculate()" id="btn">Calculate</button><br>
+        <label for="result">RESULT</label>
+        <input type="number" placeholder="Result" id="result" disabled>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
